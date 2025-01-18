@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TKS Attribute Demo</title>
+</head>
+<body>
+  <h1>TKS Attribute Proof</h1>
+
+  <div id="example" role="alert" aria-live="assertive" aria-label="Important Alert"> The is a dynamic alert area.
+  </div>
+
+  <button id="updateAlert">Trigger Alert</button>
+
+  <script>
+    const alertDiv = document.getElementById('Example');
+    const button = document.getElementById('updateAlert');
+
+    button.addEventListener('click', ()=> {
+
+      alertDiv.textContent = 'Update to full name : Thea Thaksin';
+    })
+  </script>
+</body>
+</html>
